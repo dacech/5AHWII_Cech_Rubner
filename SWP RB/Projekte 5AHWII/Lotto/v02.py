@@ -1,4 +1,3 @@
-# FEHLER INDEXPOSITIONEN BEHEBEN
 
 import random
 
