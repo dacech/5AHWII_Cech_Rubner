@@ -1,4 +1,3 @@
-
 import random
 
 # Liste mit 1-45 (Index 0 - 44)
@@ -17,8 +16,8 @@ def generiere_zufallszahl(minimum, maximum):
 
 # Ziehe 6 Zahlen
 for i in range(6):
-    zufallszahl = generiere_zufallszahl(i, 44)
-    vertausche_zwei_index(liste, zufallszahl, 44 - i)
+    zufallszahl = generiere_zufallszahl(0, 44 - i)  # Zufallsindex aus dem Bereich 0 bis (44 - i)
+    vertausche_zwei_index(liste, zufallszahl, 44 - i)  # Tausche die gezogene Zahl mit der letzten in der Liste
 
 
 letzte_sechs_zahlen = sorted(liste[-6:])

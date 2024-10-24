@@ -34,9 +34,10 @@ def lottoziehung_statistic(anzahl_ziehungen):
     for _ in range(anzahl_ziehungen):
         ziehung = lottoziehung()
         for zahl in ziehung:
-            dict_ziehungen_statistic[zahl] += 1
+            dict_ziehungen_statistic[zahl] += 1     #zahl = key
     return dict_ziehungen_statistic
 
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! vllt noch main() programmieren !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 # Führe 100.000 Ziehungen durch
 data = lottoziehung_statistic(100000)
